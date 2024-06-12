@@ -1,6 +1,7 @@
 import boto3
 import botocore
 
+# faz o download de arquivo armazenado em bucket s3 da aws
 def download_s3(nome_buckets3, nome_arquivo, path_arquivo, access_key, secret_key, regiao):
     client = boto3.client(
         service_name= 's3',
